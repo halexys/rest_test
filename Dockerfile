@@ -6,8 +6,8 @@ ENV PYTHONUNBUFFERED 1
 
 RUN mkdir /app
 
-ADD ./api_app/ /app
-COPY ./requirements.txt /app
+ADD ./api_app/ /app/
+COPY ./requirements.txt /app/
 
 WORKDIR /app
 
