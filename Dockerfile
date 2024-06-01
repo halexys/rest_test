@@ -4,11 +4,11 @@ MAINTAINER Hal
 
 ENV PYTHONUNBUFFERED 1
 
-COPY ./requirements.txt /
+COPY ./requirements.txt /root
 
 RUN mkdir /app
 
-COPY ./api_app/ /
+COPY ./api_app/ /root
 
 WORKDIR /app
 
