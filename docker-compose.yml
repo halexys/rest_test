@@ -2,8 +2,7 @@ version: "3"
 services:
 
   app:
-    build: #- Build section of the configuration.
-      context: . #- We are sending context to "." which is our current directory.
+    build: .
     ports:
       - "8181:8000" #- Map our project on port 8000 on our host to 8000 on the image.
     volumes:  #Whenever you change something in your project, it automatically updates changes in the container in Real-Time, so you don't need to restart the containers to reflect the changes.
