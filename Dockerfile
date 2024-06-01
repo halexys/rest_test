@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM docker.uclv.cu/python:alpine
 LABEL authors="Hal"
 MAINTAINER Hal
 
