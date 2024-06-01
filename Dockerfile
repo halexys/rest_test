@@ -10,7 +10,7 @@ RUN mkdir /app
 
 COPY ./api_app/ /root
 
-WORKDIR /app
+WORKDIR /root
 
 
 RUN pip install -r /root/requirements.txt
