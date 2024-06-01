@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  app:
+    build: #- Build section of the configuration.
+      context: . #- We are sending context to "." which is our current directory.
+    ports:
+      - "8181:8000" #- Map our project on port 8000 on our host to 8000 on the image.
+    volumes:  #Whenever you change something in your project, it automatically updates changes in the container in Real-Time, so you don't need to restart the containers to reflect the changes.
+      - .:/app #- Maps app directory of our project to app the directory in our docker image.
+    command: > #- Command that is used to run our application on our docker container.
+      sh -c "python manage.py runserver 0.0.0.0:8000" # - shell command to run our application. This will start our development server on port 8000, available on all IP Address's that run on the container.
