@@ -7,5 +7,5 @@ services:
       - "8181:8000" #- Map our project on port 8000 on our host to 8000 on the image.
     volumes:  #Whenever you change something in your project, it automatically updates changes in the container in Real-Time, so you don't need to restart the containers to reflect the changes.
       - .:/app #- Maps app directory of our project to app the directory in our docker image.
-    #command: >
-    #  sh -c "python manage.py runserver 0.0.0.0:8000"
+    command: >
+      sh -c "python"
