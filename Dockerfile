@@ -8,7 +8,7 @@ COPY ./requirements.txt /
 
 RUN mkdir /app
 
-ADD ./api_app/ /app/
+COPY ./api_app/ /
 
 WORKDIR /app
 
