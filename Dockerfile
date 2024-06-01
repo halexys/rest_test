@@ -13,7 +13,7 @@ COPY ./api_app/ /root
 WORKDIR /app
 
 
-RUN pip install -r /requirements.txt
+RUN pip install -r /root/requirements.txt
 
 
 
