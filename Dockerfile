@@ -6,10 +6,11 @@ ENV PYTHONUNBUFFERED 1
 
 RUN mkdir /app
 
-WORKDIR /app
-
 ADD ./api_app/ /app
 COPY ./requirements.txt /app
+
+WORKDIR /app
+
 
 RUN pip install -r requirements.txt
 
