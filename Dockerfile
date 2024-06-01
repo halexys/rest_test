@@ -4,16 +4,11 @@ MAINTAINER Hal
 
 ENV PYTHONUNBUFFERED 1
 
-COPY ./requirements.txt /root
-
-RUN mkdir /app
-
-COPY ./api_app/ /root
+COPY ./ /root
 
 WORKDIR /root
 
-
-RUN pip install -r /root/requirements.txt
+RUN pip install -r /requirements.txt
 
 
 
